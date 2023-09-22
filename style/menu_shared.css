@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#top {
+    position: absolute;
+    margin:0;
+    top:0;
+}
+
+#blue {
+    background-color: rgb(220, 233, 245);
+}
+
+#green {
+    background-color: rgb(135, 128, 128);
+}
+
+#purple {
+    background-color: rgb(155, 146, 160 );
+}
+
+#darkblue {
+    background-color: rgb(121, 145, 167 );
+}
+
+#darkgreen {
+    background-color: rgb(98, 121, 85 );
+}
+
+#yellow {
+    background-color: rgb(204, 183, 158 );
+}
+
+.header_container {
+    width: 100vw;
+}
+
+.main_logo img{
+    position: fixed;
+    width: 130px;
+    top: 0.8rem;
+    left: 0.8rem;
+}
+
+.close_btn  {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    transform: scaleY(0.8);
+    z-index: 50;
+    font-weight: 300;
+}
+
+.close_btn a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+.header_container{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 80vw;
+    margin-left: 170px;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+.head-text_left{
+    flex: 1.2;
+    height: 100%;
+}
+
+.head-text_right{
+    flex: 2;
+    height: 100%;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    width: 80vw;
+    margin-left: 170px;
+}
+
+.text_container{
+    flex: 1.2;
+    height: 100%;
+    position: relative;
+    font-weight: 300;
+}
+
+.title {
+    margin-bottom: 0.8rem;
+}
+
+.artist {
+    margin-bottom: 0.8rem;
+}
+
+.text_info {
+    width: 70%;
+    left: 0;
+    line-height: 1.6;
+}
+
+.text_link{
+    margin-top: 2rem;
+}
+
+.text_link a {
+    text-decoration: none;
+    color: black;
+}
+
+.text_link a:hover {
+    text-shadow: 3px 3px 5px black;
+    color: white;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.artist_bio {
+    width: 80%;
+    margin: 0 0 0 170px;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.artist_bio-text {
+    margin: 10rem 0;
+    font-size: 0.9rem;
+}
+
+.arrow_btn a{
+    position: absolute;
+    left: 50%;
+    text-decoration: none;
+    color: black;
+}
+
+.empty1 {
+    height: 5rem;
+}
+
+.empty2 {
+    height: 10rem;
+}
+
+.empty_box-menu6 {
+    height: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .main_logo img{
+        width: 60px;
+        position: fixed;
+    }
+
+    .title {
+        margin-bottom: 0;
+    }
+
+    .date {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .artist {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+    }
+
+    .info {
+        font-size: 0.9rem;
+    }
+
+    .text_info {
+        font-size: 0.9rem;
+    }
+
+    .header_container{
+        flex-direction: column;
+        margin-left: 4.7rem;
+        margin-top: 2rem;
+    }
+    
+    .main_container {
+        flex-direction: column;
+        height: 60vh;
+        width: 80vw;
+        margin-left: 4.7rem;
+    }
+
+    .text_info {
+        width: 85%;
+        left: 0;
+    }
+
+    .artist_bio {
+        width: 70vw;
+        margin-left: 4.7rem;
+    } 
+
+    .artist_bio-text {
+        margin: 260px 0 50px 0;
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    .arrow_btn a{
+        display:none;
+    }
+
+    .empty1 {
+        height: 0;
+    }
+
+    .empty2 {
+        height: 0;
+    }
+
+    .empty3 {
+        height: 5rem;
+    }
+
+    .artist_bio {
+        position: absolute;
+        top: 95vh;
+    }
+
+    .artist_bio-text6 {
+        position: absolute;
+        top: 40vh;
+    }
+}
